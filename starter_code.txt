@@ -1,0 +1,28 @@
+WARM UP
+https://www.hackerrank.com/challenges/solve-me-first
+
+
+
+R
+
+# The complete code is given. You can just review and submit!
+nums <- read.table("/dev/stdin", sep=" ");
+nums <- as.list(as.data.frame(t(nums)))
+write.table(as.numeric(nums[1])+as.numeric(nums[2]), sep = "", append=T, row.names = F, col.names = F)
+
+
+
+
+Python
+
+#!/bin/python3
+
+import sys
+
+def getPoints(month1, month2, month3):
+    # Complete this function
+
+month1,month2,month3 = input().strip().split(' ')
+month1,month2,month3 = [int(month1),int(month2),int(month3)]
+pointsEarned = getPoints(month1, month2, month3)
+print(pointsEarned)
