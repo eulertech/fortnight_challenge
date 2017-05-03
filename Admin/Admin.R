@@ -2,7 +2,7 @@
 namelist <- read.csv('C://Users//mfp53502//Documents//GitHub//fortnight_challenge//Admin//AANameList.csv')
 names(namelist) <- c('Name')
 
-name2exclude <- c('liang','adam')
+name2exclude <- c('liang','peter')
 notkeep <- namelist$Name %in% name2exclude
 name2use <- as.data.frame(namelist[!notkeep,])
 
